@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -74,11 +73,17 @@
     .hidden {
       display: none;
     }
-    .size-chart {
-      display: block;
+    img.size-chart {
       max-width: 100%;
+      height: auto;
+      display: block;
       margin: 30px auto 10px;
-      border-radius: 8px;
+    }
+    .chart-title {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -131,8 +136,9 @@
     <p class="success-message" id="successMessage" style="display: none;">Pre-Order berhasil dikirim!</p>
     <p class="error-message" id="errorMessage" style="display: none;">Terjadi kesalahan. Coba lagi nanti.</p>
 
-    <!-- Size chart image -->
-    <img src="size-chart.png" alt="Size Chart" class="size-chart" />
+    <hr>
+    <div class="chart-title">Size Chart</div>
+    <img src="size-chart.png" alt="Size Chart" class="size-chart">
 
     <p class="note">Powered by Plezure Studio</p>
   </div>
