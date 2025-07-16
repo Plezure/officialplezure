@@ -73,17 +73,11 @@
     .hidden {
       display: none;
     }
-    img.size-chart {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 30px auto 10px;
-    }
-    .chart-title {
-      text-align: center;
-      font-weight: bold;
-      margin-top: 20px;
-      margin-bottom: 10px;
+    .size-chart {
+      width: 100%;
+      border-radius: 6px;
+      margin-top: -10px;
+      margin-bottom: 16px;
     }
   </style>
 </head>
@@ -122,6 +116,9 @@
         <option value="XL">XL</option>
       </select>
 
+      <!-- Gambar size chart -->
+      <img src="size-chart.png" alt="Size Chart" class="size-chart">
+
       <label for="qty">Jumlah Pesanan</label>
       <input type="number" id="qty" name="data[qty]" min="1" required>
 
@@ -135,10 +132,6 @@
 
     <p class="success-message" id="successMessage" style="display: none;">Pre-Order berhasil dikirim!</p>
     <p class="error-message" id="errorMessage" style="display: none;">Terjadi kesalahan. Coba lagi nanti.</p>
-
-    <hr>
-    <div class="chart-title">Size Chart</div>
-    <img src="size-chart.png" alt="Size Chart" class="size-chart">
 
     <p class="note">Powered by Plezure Studio</p>
   </div>
